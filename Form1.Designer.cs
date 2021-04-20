@@ -36,15 +36,18 @@ namespace xml_vize
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btn_manisa = new System.Windows.Forms.Button();
-            this.btn_izmir = new System.Windows.Forms.Button();
-            this.btn_mugla = new System.Windows.Forms.Button();
-            this.btn_amasya = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,56 +96,56 @@ namespace xml_vize
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
             // 
-            // btn_manisa
+            // button1
             // 
-            this.btn_manisa.Location = new System.Drawing.Point(12, 174);
-            this.btn_manisa.Name = "btn_manisa";
-            this.btn_manisa.Size = new System.Drawing.Size(81, 34);
-            this.btn_manisa.TabIndex = 5;
-            this.btn_manisa.Text = "MANİSA";
-            this.btn_manisa.UseVisualStyleBackColor = true;
-         
+            this.button1.Location = new System.Drawing.Point(12, 129);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(776, 36);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn_izmir
+            // dataGridView1
             // 
-            this.btn_izmir.Location = new System.Drawing.Point(125, 174);
-            this.btn_izmir.Name = "btn_izmir";
-            this.btn_izmir.Size = new System.Drawing.Size(81, 34);
-            this.btn_izmir.TabIndex = 6;
-            this.btn_izmir.Text = "İZMİR";
-            this.btn_izmir.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dataGridView1.Location = new System.Drawing.Point(138, 171);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(507, 262);
+            this.dataGridView1.TabIndex = 6;
             // 
-            // btn_mugla
+            // Column1
             // 
-            this.btn_mugla.Location = new System.Drawing.Point(239, 174);
-            this.btn_mugla.Name = "btn_mugla";
-            this.btn_mugla.Size = new System.Drawing.Size(81, 34);
-            this.btn_mugla.TabIndex = 7;
-            this.btn_mugla.Text = "MUĞLA";
-            this.btn_mugla.UseVisualStyleBackColor = true;
+            this.Column1.HeaderText = "İL";
+            this.Column1.Name = "Column1";
             // 
-            // btn_amasya
+            // Column2
             // 
-            this.btn_amasya.Location = new System.Drawing.Point(360, 174);
-            this.btn_amasya.Name = "btn_amasya";
-            this.btn_amasya.Size = new System.Drawing.Size(81, 34);
-            this.btn_amasya.TabIndex = 8;
-            this.btn_amasya.Text = "AMASYA";
-            this.btn_amasya.UseVisualStyleBackColor = true;
+            this.Column2.HeaderText = "DURUM";
+            this.Column2.Name = "Column2";
             // 
-            // timer1
+            // Column3
             // 
-           
+            this.Column3.HeaderText = "MAX SICAKLIK";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "MİN SICAKLIK";
+            this.Column4.Name = "Column4";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_amasya);
-            this.Controls.Add(this.btn_mugla);
-            this.Controls.Add(this.btn_izmir);
-            this.Controls.Add(this.btn_manisa);
+            this.ClientSize = new System.Drawing.Size(854, 499);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -150,11 +153,11 @@ namespace xml_vize
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,11 +170,13 @@ namespace xml_vize
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btn_manisa;
-        private System.Windows.Forms.Button btn_izmir;
-        private System.Windows.Forms.Button btn_mugla;
-        private System.Windows.Forms.Button btn_amasya;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
 
