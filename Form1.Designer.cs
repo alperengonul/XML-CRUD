@@ -30,168 +30,325 @@ namespace xml_vize
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.İL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Durum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.görsel1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.görsel2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.manisa = new System.Windows.Forms.PictureBox();
+            this.izmir = new System.Windows.Forms.PictureBox();
+            this.kastamonu = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.eskisehir = new System.Windows.Forms.PictureBox();
+            this.afyon = new System.Windows.Forms.PictureBox();
+            this.antalya = new System.Windows.Forms.PictureBox();
+            this.konya = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.adana = new System.Windows.Forms.PictureBox();
+            this.trabzon = new System.Windows.Forms.PictureBox();
+            this.hatay = new System.Windows.Forms.PictureBox();
+            this.erzurum = new System.Windows.Forms.PictureBox();
+            this.van = new System.Windows.Forms.PictureBox();
+            this.artvin = new System.Windows.Forms.PictureBox();
+            this.canakkale = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manisa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izmir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kastamonu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eskisehir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.afyon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.antalya)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.konya)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adana)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trabzon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hatay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erzurum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.van)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artvin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.canakkale)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // comboBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(243, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(448, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AG HAVA DURUMU UYGULAMASI";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(12, 709);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(181, 21);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(279, 72);
+            this.pictureBox1.Location = new System.Drawing.Point(287, 92);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.Size = new System.Drawing.Size(73, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(385, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(366, 108);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.Size = new System.Drawing.Size(73, 58);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // manisa
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(491, 72);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.manisa.BackColor = System.Drawing.Color.Transparent;
+            this.manisa.Image = ((System.Drawing.Image)(resources.GetObject("manisa.Image")));
+            this.manisa.Location = new System.Drawing.Point(200, 374);
+            this.manisa.Name = "manisa";
+            this.manisa.Size = new System.Drawing.Size(73, 58);
+            this.manisa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.manisa.TabIndex = 13;
+            this.manisa.TabStop = false;
             // 
-            // pictureBox4
+            // izmir
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(597, 72);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(59, 51);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.izmir.BackColor = System.Drawing.Color.Transparent;
+            this.izmir.Image = ((System.Drawing.Image)(resources.GetObject("izmir.Image")));
+            this.izmir.Location = new System.Drawing.Point(141, 438);
+            this.izmir.Name = "izmir";
+            this.izmir.Size = new System.Drawing.Size(73, 58);
+            this.izmir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.izmir.TabIndex = 14;
+            this.izmir.TabStop = false;
             // 
-            // dataGridView1
+            // kastamonu
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.İL,
-            this.Durum,
-            this.Column3,
-            this.Column4,
-            this.görsel1,
-            this.görsel2});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 129);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(830, 774);
-            this.dataGridView1.TabIndex = 6;
+            this.kastamonu.BackColor = System.Drawing.Color.Transparent;
+            this.kastamonu.Image = ((System.Drawing.Image)(resources.GetObject("kastamonu.Image")));
+            this.kastamonu.Location = new System.Drawing.Point(686, 42);
+            this.kastamonu.Name = "kastamonu";
+            this.kastamonu.Size = new System.Drawing.Size(73, 58);
+            this.kastamonu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.kastamonu.TabIndex = 15;
+            this.kastamonu.TabStop = false;
             // 
-            // İL
+            // pictureBox6
             // 
-            this.İL.HeaderText = "İL";
-            this.İL.Name = "İL";
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(596, 232);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(73, 58);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 16;
+            this.pictureBox6.TabStop = false;
             // 
-            // Durum
+            // eskisehir
             // 
-            this.Durum.HeaderText = "DURUM";
-            this.Durum.Name = "Durum";
+            this.eskisehir.BackColor = System.Drawing.Color.Transparent;
+            this.eskisehir.Image = ((System.Drawing.Image)(resources.GetObject("eskisehir.Image")));
+            this.eskisehir.Location = new System.Drawing.Point(462, 281);
+            this.eskisehir.Name = "eskisehir";
+            this.eskisehir.Size = new System.Drawing.Size(73, 58);
+            this.eskisehir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eskisehir.TabIndex = 17;
+            this.eskisehir.TabStop = false;
             // 
-            // Column3
+            // afyon
             // 
-            this.Column3.HeaderText = "MAX SICAKLIK";
-            this.Column3.Name = "Column3";
+            this.afyon.BackColor = System.Drawing.Color.Transparent;
+            this.afyon.Image = ((System.Drawing.Image)(resources.GetObject("afyon.Image")));
+            this.afyon.Location = new System.Drawing.Point(447, 392);
+            this.afyon.Name = "afyon";
+            this.afyon.Size = new System.Drawing.Size(73, 58);
+            this.afyon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.afyon.TabIndex = 18;
+            this.afyon.TabStop = false;
             // 
-            // Column4
+            // antalya
             // 
-            this.Column4.HeaderText = "MİN SICAKLIK";
-            this.Column4.Name = "Column4";
+            this.antalya.BackColor = System.Drawing.Color.Transparent;
+            this.antalya.Image = ((System.Drawing.Image)(resources.GetObject("antalya.Image")));
+            this.antalya.Location = new System.Drawing.Point(505, 594);
+            this.antalya.Name = "antalya";
+            this.antalya.Size = new System.Drawing.Size(73, 58);
+            this.antalya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.antalya.TabIndex = 19;
+            this.antalya.TabStop = false;
             // 
-            // görsel1
+            // konya
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.NullValue = null;
-            this.görsel1.DefaultCellStyle = dataGridViewCellStyle19;
-            this.görsel1.HeaderText = "görsel1";
-            this.görsel1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.görsel1.Name = "görsel1";
+            this.konya.BackColor = System.Drawing.Color.Transparent;
+            this.konya.Image = ((System.Drawing.Image)(resources.GetObject("konya.Image")));
+            this.konya.Location = new System.Drawing.Point(629, 438);
+            this.konya.Name = "konya";
+            this.konya.Size = new System.Drawing.Size(73, 58);
+            this.konya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.konya.TabIndex = 20;
+            this.konya.TabStop = false;
             // 
-            // görsel2
+            // pictureBox11
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.NullValue = ((object)(resources.GetObject("dataGridViewCellStyle20.NullValue")));
-            this.görsel2.DefaultCellStyle = dataGridViewCellStyle20;
-            this.görsel2.HeaderText = "görsel2";
-            this.görsel2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.görsel2.Name = "görsel2";
+            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(190, 568);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(73, 58);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 21;
+            this.pictureBox11.TabStop = false;
+            // 
+            // adana
+            // 
+            this.adana.BackColor = System.Drawing.Color.Transparent;
+            this.adana.Image = ((System.Drawing.Image)(resources.GetObject("adana.Image")));
+            this.adana.Location = new System.Drawing.Point(883, 552);
+            this.adana.Name = "adana";
+            this.adana.Size = new System.Drawing.Size(73, 58);
+            this.adana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.adana.TabIndex = 22;
+            this.adana.TabStop = false;
+            // 
+            // trabzon
+            // 
+            this.trabzon.BackColor = System.Drawing.Color.Transparent;
+            this.trabzon.Image = ((System.Drawing.Image)(resources.GetObject("trabzon.Image")));
+            this.trabzon.Location = new System.Drawing.Point(1253, 92);
+            this.trabzon.Name = "trabzon";
+            this.trabzon.Size = new System.Drawing.Size(73, 58);
+            this.trabzon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trabzon.TabIndex = 23;
+            this.trabzon.TabStop = false;
+            // 
+            // hatay
+            // 
+            this.hatay.BackColor = System.Drawing.Color.Transparent;
+            this.hatay.Image = ((System.Drawing.Image)(resources.GetObject("hatay.Image")));
+            this.hatay.Location = new System.Drawing.Point(978, 634);
+            this.hatay.Name = "hatay";
+            this.hatay.Size = new System.Drawing.Size(73, 58);
+            this.hatay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.hatay.TabIndex = 24;
+            this.hatay.TabStop = false;
+            // 
+            // erzurum
+            // 
+            this.erzurum.BackColor = System.Drawing.Color.Transparent;
+            this.erzurum.Image = ((System.Drawing.Image)(resources.GetObject("erzurum.Image")));
+            this.erzurum.Location = new System.Drawing.Point(1433, 175);
+            this.erzurum.Name = "erzurum";
+            this.erzurum.Size = new System.Drawing.Size(73, 58);
+            this.erzurum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.erzurum.TabIndex = 25;
+            this.erzurum.TabStop = false;
+            // 
+            // van
+            // 
+            this.van.BackColor = System.Drawing.Color.Transparent;
+            this.van.Image = ((System.Drawing.Image)(resources.GetObject("van.Image")));
+            this.van.Location = new System.Drawing.Point(1632, 322);
+            this.van.Name = "van";
+            this.van.Size = new System.Drawing.Size(73, 58);
+            this.van.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.van.TabIndex = 26;
+            this.van.TabStop = false;
+            // 
+            // artvin
+            // 
+            this.artvin.BackColor = System.Drawing.Color.Transparent;
+            this.artvin.Image = ((System.Drawing.Image)(resources.GetObject("artvin.Image")));
+            this.artvin.Location = new System.Drawing.Point(1433, 80);
+            this.artvin.Name = "artvin";
+            this.artvin.Size = new System.Drawing.Size(73, 58);
+            this.artvin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.artvin.TabIndex = 27;
+            this.artvin.TabStop = false;
+            // 
+            // canakkale
+            // 
+            this.canakkale.BackColor = System.Drawing.Color.Transparent;
+            this.canakkale.Image = ((System.Drawing.Image)(resources.GetObject("canakkale.Image")));
+            this.canakkale.Location = new System.Drawing.Point(105, 216);
+            this.canakkale.Name = "canakkale";
+            this.canakkale.Size = new System.Drawing.Size(73, 58);
+            this.canakkale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.canakkale.TabIndex = 28;
+            this.canakkale.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1466, 915);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1794, 753);
+            this.Controls.Add(this.canakkale);
+            this.Controls.Add(this.artvin);
+            this.Controls.Add(this.van);
+            this.Controls.Add(this.erzurum);
+            this.Controls.Add(this.hatay);
+            this.Controls.Add(this.trabzon);
+            this.Controls.Add(this.adana);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.konya);
+            this.Controls.Add(this.antalya);
+            this.Controls.Add(this.afyon);
+            this.Controls.Add(this.eskisehir);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.kastamonu);
+            this.Controls.Add(this.izmir);
+            this.Controls.Add(this.manisa);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manisa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.izmir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kastamonu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eskisehir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.afyon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.antalya)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.konya)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adana)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trabzon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hatay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erzurum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.van)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artvin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.canakkale)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn İL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Durum;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewImageColumn görsel1;
-        private System.Windows.Forms.DataGridViewImageColumn görsel2;
+        private System.Windows.Forms.PictureBox manisa;
+        private System.Windows.Forms.PictureBox izmir;
+        private System.Windows.Forms.PictureBox kastamonu;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox eskisehir;
+        private System.Windows.Forms.PictureBox afyon;
+        private System.Windows.Forms.PictureBox antalya;
+        private System.Windows.Forms.PictureBox konya;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox adana;
+        private System.Windows.Forms.PictureBox trabzon;
+        private System.Windows.Forms.PictureBox hatay;
+        private System.Windows.Forms.PictureBox erzurum;
+        private System.Windows.Forms.PictureBox van;
+        private System.Windows.Forms.PictureBox artvin;
+        private System.Windows.Forms.PictureBox canakkale;
     }
 }
 
