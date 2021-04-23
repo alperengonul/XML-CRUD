@@ -29,8 +29,8 @@ namespace xml_vize
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.manisa = new System.Windows.Forms.PictureBox();
@@ -49,6 +49,8 @@ namespace xml_vize
             this.van = new System.Windows.Forms.PictureBox();
             this.artvin = new System.Windows.Forms.PictureBox();
             this.canakkale = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manisa)).BeginInit();
@@ -68,15 +70,6 @@ namespace xml_vize
             ((System.ComponentModel.ISupportInitialize)(this.artvin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.canakkale)).BeginInit();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 709);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(181, 21);
-            this.comboBox1.TabIndex = 9;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -112,6 +105,7 @@ namespace xml_vize
             this.manisa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.manisa.TabIndex = 13;
             this.manisa.TabStop = false;
+            this.manisa.Click += new System.EventHandler(this.manisa_Click);
             // 
             // izmir
             // 
@@ -123,6 +117,7 @@ namespace xml_vize
             this.izmir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.izmir.TabIndex = 14;
             this.izmir.TabStop = false;
+            this.izmir.Click += new System.EventHandler(this.izmir_Click);
             // 
             // kastamonu
             // 
@@ -134,6 +129,7 @@ namespace xml_vize
             this.kastamonu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.kastamonu.TabIndex = 15;
             this.kastamonu.TabStop = false;
+            this.kastamonu.Click += new System.EventHandler(this.kastamonu_Click);
             // 
             // pictureBox6
             // 
@@ -145,6 +141,7 @@ namespace xml_vize
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 16;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // eskisehir
             // 
@@ -156,6 +153,7 @@ namespace xml_vize
             this.eskisehir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.eskisehir.TabIndex = 17;
             this.eskisehir.TabStop = false;
+            this.eskisehir.Click += new System.EventHandler(this.eskisehir_Click);
             // 
             // afyon
             // 
@@ -167,6 +165,7 @@ namespace xml_vize
             this.afyon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.afyon.TabIndex = 18;
             this.afyon.TabStop = false;
+            this.afyon.Click += new System.EventHandler(this.afyon_Click);
             // 
             // antalya
             // 
@@ -178,6 +177,7 @@ namespace xml_vize
             this.antalya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.antalya.TabIndex = 19;
             this.antalya.TabStop = false;
+            this.antalya.Click += new System.EventHandler(this.antalya_Click);
             // 
             // konya
             // 
@@ -189,6 +189,7 @@ namespace xml_vize
             this.konya.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.konya.TabIndex = 20;
             this.konya.TabStop = false;
+            this.konya.Click += new System.EventHandler(this.konya_Click);
             // 
             // pictureBox11
             // 
@@ -200,6 +201,7 @@ namespace xml_vize
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 21;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // adana
             // 
@@ -211,6 +213,7 @@ namespace xml_vize
             this.adana.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.adana.TabIndex = 22;
             this.adana.TabStop = false;
+            this.adana.Click += new System.EventHandler(this.adana_Click);
             // 
             // trabzon
             // 
@@ -222,6 +225,7 @@ namespace xml_vize
             this.trabzon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.trabzon.TabIndex = 23;
             this.trabzon.TabStop = false;
+            this.trabzon.Click += new System.EventHandler(this.trabzon_Click);
             // 
             // hatay
             // 
@@ -233,6 +237,7 @@ namespace xml_vize
             this.hatay.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hatay.TabIndex = 24;
             this.hatay.TabStop = false;
+            this.hatay.Click += new System.EventHandler(this.hatay_Click);
             // 
             // erzurum
             // 
@@ -244,6 +249,7 @@ namespace xml_vize
             this.erzurum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.erzurum.TabIndex = 25;
             this.erzurum.TabStop = false;
+            this.erzurum.Click += new System.EventHandler(this.erzurum_Click);
             // 
             // van
             // 
@@ -255,6 +261,7 @@ namespace xml_vize
             this.van.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.van.TabIndex = 26;
             this.van.TabStop = false;
+            this.van.Click += new System.EventHandler(this.van_Click);
             // 
             // artvin
             // 
@@ -266,6 +273,7 @@ namespace xml_vize
             this.artvin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.artvin.TabIndex = 27;
             this.artvin.TabStop = false;
+            this.artvin.Click += new System.EventHandler(this.artvin_Click);
             // 
             // canakkale
             // 
@@ -277,6 +285,21 @@ namespace xml_vize
             this.canakkale.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.canakkale.TabIndex = 28;
             this.canakkale.TabStop = false;
+            this.canakkale.Click += new System.EventHandler(this.canakkale_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(1073, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 25);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "label1";
             // 
             // Form1
             // 
@@ -285,6 +308,7 @@ namespace xml_vize
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1794, 753);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.canakkale);
             this.Controls.Add(this.artvin);
             this.Controls.Add(this.van);
@@ -303,7 +327,6 @@ namespace xml_vize
             this.Controls.Add(this.manisa);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -326,11 +349,11 @@ namespace xml_vize
             ((System.ComponentModel.ISupportInitialize)(this.artvin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.canakkale)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox manisa;
@@ -349,6 +372,8 @@ namespace xml_vize
         private System.Windows.Forms.PictureBox van;
         private System.Windows.Forms.PictureBox artvin;
         private System.Windows.Forms.PictureBox canakkale;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

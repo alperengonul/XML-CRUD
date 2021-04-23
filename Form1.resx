@@ -30880,6 +30880,9 @@
         17DjGnZcw45r2ClFI5moKaUiOVzDjmvYcQ07rmGnDI3/q/4fPuIcExR3DFIAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABwwAAAPWCAYAAAD9A2ywAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
