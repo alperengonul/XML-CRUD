@@ -27,7 +27,7 @@ namespace xml_vize
 
         public void Form1_Load(object sender, EventArgs e)
         {
-             MessageBox.Show("Sıcaklığını ve durumunu öğrenmek istediğiniz ilin üzerindeki raptiye fotğrafına tıklayınız");
+            MessageBox.Show("Sıcaklığını ve durumunu öğrenmek istediğiniz ilin üzerindeki raptiye fotğrafına tıklayınız");
             MessageBox.Show("Sıcaklık ve durum değerlendirmeleri hergün saat 18:00 ve 06:00'da güncellenmektedir");
             
             timer1.Start();
@@ -36,17 +36,17 @@ namespace xml_vize
            
             
         }
-        
+         public  string maks ="0";
         public void program()
         {
-            
+           
             timer2.Interval = 1800000;
             timer2.Enabled = true;
            
             XDocument deneme = XDocument.Load(havadurumu_link);
+
             
 
-           
             string zaman = deneme.Descendants("Tarih").ElementAt(0).Value;
             string istanbul = deneme.Descendants("ili").ElementAt(0).Value;
             string istmax = deneme.Descendants("Mak").ElementAt(0).Value;
@@ -62,29 +62,35 @@ namespace xml_vize
             string mugmax = deneme.Descendants("Mak").ElementAt(5).Value;
             string mugmin = deneme.Descendants("Min").ElementAt(5).Value;
 
-            FileStream kayit2 = new FileStream(@"C:\Users\Alperen\Desktop\ntp deneme\xml vize\xml vize\bilgikayit.txt", FileMode.Append, FileAccess.Write, FileShare.Write);
-            StreamWriter kayded = new StreamWriter(kayit2);
-            string saat = DateTime.Now.ToLongTimeString();
-            kayded.WriteLine("---------------------------------------------------------------------------");
-            kayded.WriteLine(" ");
-            kayded.WriteLine("TARİH:  " + zaman + "     SAAT:  " + saat);
-            kayded.WriteLine("--İL------MAXSIC---MİNSIC");
-            kayded.WriteLine("İstanbul   {0}°-----{1}°", istmax, istmin);
-            kayded.WriteLine("Kocaeli    {0}°-----{1}°", kocmax, kocmin);
-            kayded.WriteLine("Çanakkale  {0}°-----{1}°", canmax, canmin);
-            kayded.WriteLine("Manisa     {0}°-----{1}°", manmax, manmin);
-            kayded.WriteLine("İzmir      {0}°-----{1}°", izmax, izmin);
-            kayded.WriteLine("Muğla      {0}°-----{1}°", mugmax, mugmin);
-
-            kayded.Close();
+           
             string manisa = deneme.Descendants("ili").ElementAt(29).Value;
            
             label2.Text = manisa;
             label3.Text = manmax + "°";
             label4.Text = manmin + "°";
 
+            
+            //// yeni kayıt geldiğinde txt dosyasına yaz ve bildirim gönder
+            if (manmax !=maks)
+            {
+                maks = manmax;
 
-
+                FileStream kayit2 = new FileStream(@"C:\Users\Alperen\Desktop\ntp deneme\xml vize\xml vize\bilgikayit.txt", FileMode.Append, FileAccess.Write, FileShare.Write);
+                StreamWriter kayded = new StreamWriter(kayit2);
+                string saat = DateTime.Now.ToLongTimeString();
+                kayded.WriteLine("---------------------------------------------------------------------------");
+                kayded.WriteLine(" ");
+                kayded.WriteLine("TARİH:  " + zaman + "     SAAT:  " + saat);
+                kayded.WriteLine("--İL------MAXSIC---MİNSIC");
+                kayded.WriteLine("İstanbul   {0}°-----{1}°", istmax, istmin);
+                kayded.WriteLine("Kocaeli    {0}°-----{1}°", kocmax, kocmin);
+                kayded.WriteLine("Çanakkale  {0}°-----{1}°", canmax, canmin);
+                kayded.WriteLine("Manisa     {0}°-----{1}°", manmax, manmin);
+                kayded.WriteLine("İzmir      {0}°-----{1}°", izmax, izmin);
+                kayded.WriteLine("Muğla      {0}°-----{1}°", mugmax, mugmin);
+                kayded.Close();
+                MessageBox.Show("YENİ BİLGİLER GÜNCELLENDİ");
+            }
 
         }
         
@@ -302,7 +308,7 @@ namespace xml_vize
         private void timer2_Tick(object sender, EventArgs e)
         {
             program();
-            MessageBox.Show("Yarım saatlik veri kontrolü gerçekleşti");
+            
            
         }
 
