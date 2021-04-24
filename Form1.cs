@@ -36,7 +36,7 @@ namespace xml_vize
            
             
         }
-         public  string maks ="0";
+        public  string yedek ="0";
         public void program()
         {
            
@@ -71,9 +71,9 @@ namespace xml_vize
 
             
             //// yeni kayıt geldiğinde txt dosyasına yaz ve bildirim gönder
-            if (manmax !=maks)
+            if (manmax != yedek)
             {
-                maks = manmax;
+                yedek = manmax;
 
                 FileStream kayit2 = new FileStream(@"C:\Users\Alperen\Desktop\ntp deneme\xml vize\xml vize\bilgikayit.txt", FileMode.Append, FileAccess.Write, FileShare.Write);
                 StreamWriter kayded = new StreamWriter(kayit2);
