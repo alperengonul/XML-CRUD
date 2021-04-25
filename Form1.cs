@@ -89,7 +89,7 @@ namespace xml_vize
                 kayded.WriteLine("İzmir      {0}°-----{1}°", izmax, izmin);
                 kayded.WriteLine("Muğla      {0}°-----{1}°", mugmax, mugmin);
                 kayded.Close();
-                MessageBox.Show("YENİ BİLGİLER GÜNCELLENDİ");
+                MessageBox.Show("YENİ BİLGİLER GÜNCELLENDİ ve KAYIT EDİLDİ");
             }
 
         }
@@ -294,15 +294,7 @@ namespace xml_vize
             
             label1.Text ="SAAT:"+ DateTime.Now.ToLongTimeString();
 
-            if (DateTime.Now.ToLongTimeString()=="18:00:00")
-            {
-                MessageBox.Show("BİLGİLER GÜNCELLENDİ");
-            }
-
-            if (DateTime.Now.ToLongTimeString() == "06:00:00")
-            {
-                MessageBox.Show("BİLGİLER GÜNCELLENDİ");
-            }
+           
         }
 
         private void timer2_Tick(object sender, EventArgs e)
